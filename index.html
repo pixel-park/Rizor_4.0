@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_medias.css">
+    <script src="./js/gsap/gsap.min.js" defer></script>
+    <script src="./js/gsap/ScrollToPlugin.min.js" defer></script>
+    <script src="./js/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./js/gsap/CustomEase.min.js" defer></script>
+    <script src="./js/utils.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <title>Rizor 4.0</title>
+</head>
+<body>
+    <nav class="menu">
+        <div class="menu__bar">
+            <div id="menuA" class="menu__logo"></div>
+            <ul class="menu__stages">
+                <li class="menu__option"><a class="uppercase menu__link" href="#anchorB" id="menuB">преимущества</a></li>
+                <li class="menu__option"><a class="uppercase menu__link" href="#anchorC" id="menuC">характеристики</a></li>
+                <li class="menu__option"><a class="uppercase menu__link"href="#anchorD"  id="menuD">для кого</a></li>
+            </ul>
+        </div>  
+        <div class="scroll-view">
+            <div class="scroll-view__bar">
+                <div class="scroll-view__top white-shadow"></div>
+                <div class="scroll-view__circle-wrapper">
+                    <div class="scrol-view__circle white-shadow" id="scrollA"></div>
+                </div>
+                <div class="scroll-view__circle-wrapper">
+                    <div class="scrol-view__circle white-shadow" id="scrollB"></div>
+                </div>    
+                <div class="scroll-view__circle-wrapper">
+                    <div class="scrol-view__circle white-shadow" id="scrollC"></div>
+                </div> 
+                <div class="scroll-view__circle-wrapper">
+                    <div class="scrol-view__circle white-shadow" id="scrollD"></div>
+                </div>     
+                <div class="scroll-view__bottom white-shadow"></div>
+            </div>
+        </div>    
+    </nav>
+    <div id="anchorA" class="content-wrapper">
+    <main>
+        <div class="back-signs left">
+            <div class="back-signs__left"></div>
+        </div>
+        <div class="back-signs right">
+            <div class="back-signs__right">
+                <div class="back-signs__text"><span class="back-signs__text_spacing">
+                    4.0</span><br>rizor</div>
+            </div>
+        </div>
+    <article>
+        <div class="block right">
+            <div class="main-block">
+                <div class="main-block__left">
+                    <h1 class="main-block__hero breakable">rizor<br>hovertrax<br><span class="main-block__hero_spacing">4.0</span></h1>
+                    <h3 class="uppercase block__text_roboto_bold main-block__text_h3 breakable">Маневренность, легкость,<br>экологичность</h3>
+                    <div class="main-block__arrow-container">
+                        <div class="main-block__arrow-down"></div>
+                    </div>
+                </div>
+                <div class="main-block__play-wrapper">
+                    <div class="block__play">
+                        <div class="block__play-text-wrapper">
+                            <div class="upercase block__text_roboto_bold block__play-text">смотреть<br>видео</div>
+                        </div>
+                        <div class="gsap__play">
+                            <div class="block__play-sign"></div>
+                        </div>
+                    </div>
+                        <div class="main-block__to-play"></div>
+                </div>
+            </div>
+        </div>
+        <div class="block left">
+            <section id="anchorB" class="advantage">
+                <div class="advantage__left-image">
+                    <div class="advantage__play-circle">
+                        <div class="advantage__play"></div>
+                    </div>
+                </div>
+                <div class="advantage__left_text-container">
+                    <h3 class="block__text_blue breakable">преимущества</h3>
+                    <h2 class="block__text_hero breakable">дизайн</h2>
+                    <h4 class="block__text_content breakable">Внешний вид скутера дышит<br>идеями футуризма:</h4>
+                    <ul>
+                        <li class="block__text_content block__text_bullet breakable">плавные линии</li>
+                        <li class="block__text_content block__text_bullet breakable">подсветка светодиодными<br>индикаторами</li>
+                        <li class="block__text_content block__text_bullet breakable">рельефные бамперы,<br>оснащенные защитными<br>панелями</li>
+                    </ul>
+                </div>
+                <div class="advantage__right-block_container">
+                    <div class="advantage__right_text-container">
+                        <h2 class="block__text_hero breakable">цвет</h2>
+                        <h4 class="block__text_content breakable">
+                            Модель представлена сразу<br>в нескольких цветах.  
+                        </h4>
+                    </div>
+                    <div class="advantage__to-color"></div>
+                    <div class="advantage__from-color"></div>
+                    <div class="advantage__right-image">
+                        <div class="colors__container">
+                            <div class="colors__shape colors__shape_yelow"></div>
+                            <div class="colors__shape colors__shape_blue"></div>
+                            <div class="colors__shape colors__shape_red"></div>
+                            <div class="colors__shape colors__shape_gray"></div>
+                            <div class="colors__shape colors__shape_black"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="anchorC" class="block right">
+            <section class="chars">
+                <div class="chars__left">
+                    <div class="chars__to-play"></div>
+                    <div class="gsap__block3_left-text">
+                        <h2 class="block__text_hero breakable">режимы</h2>
+                    <h4 id="test" class="block__text_content breakable">
+                        Помимо «умной» подсветки, <span class="block__text_content_bold">Hovertrax 4.0</span><br>снабжён двумя скоростными режимами. 
+                    </h4>
+                    <ul>
+                        <li class="block__text_content block__text_bullet breakable">Один для продвинутых пользователей</li>
+                        <li class="block__text_content block__text_bullet breakable">Второй для новичков</li>
+                    </ul>
+                    <div class="chars__left-text-container">
+                        <div class="chars__left-text-container_left">
+                            <h2 class="block__text_hero-blue_digits">13<span class="block__text_hero-blue_letters"> км/ч</span></h2>
+                            <h4 class="block__text_content_mini breakable">
+                                Максимальная<br>скорость 
+                            </h4>
+                        </div>
+                        <div class="chars__left-text-container_right">
+                            <h2 class="block__text_hero-blue_digits">2</h2>
+                            <h4 class="block__text_content_mini breakable">
+                                Скоростных<br>режима 
+                            </h4>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="chars__play-wrapper">
+                        <div class="block__play">
+                            <div class="block__play-text-wrapper">
+                                <div class="upercase block__text_roboto_bold block__play-text">смотреть<br>видео</div>
+                            </div>
+                           <div class="gsap__play_block3">
+                                <div class="block__play-sign"></div>
+                           </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="chars__right">
+                    <div class="chars__right-image"></div>
+                </div>
+            </section>
+        </div>
+        <div class="block">
+            <section id="anchorD" class="whom">
+                <div class="whom__left-block">
+                    <div class="whom__content_wrapper">
+                        <h3 class="whom__text_bold whom__text_white breakable">для кого</h3>
+                    <p class="block__text_content whom__text whom__text_white breakable">                        
+                        При максимально выдерживаемой<br>нагрузке в <strong class="block__text_content_bold">100 кг</strong> отлично подойдёт,<br>как для подрастающего поколения,<br>так и для более взрослых «наездников».<br><span class="whom__text_gap">Это единственный гироскутер со<br>специальным детским режимом<br>езды. 
+                        </span> 
+                    </p>
+                    <input type="button" value="перейти в каталог" class="block__button whom__button_pos">
+                    </div>
+                </div>
+                <div class="whom__right-image">
+                    <div class="whom__hero_container">
+                        <div class="back-signs__text"><span class="back-signs__text_spacing">
+                            4.0</span><br>rizor</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </article>
+    </main>
+        <footer class="block">
+            <div class="copyright">
+                <small class="copyright__text">© All rights reserved, 2017</small>
+            </div>
+        </footer>
+    </div>
+    <div class="center"></div>
+    <div class="disk">
+        <svg viewBox="-30 -32 100 100">
+            <path d="M27.413 3.218L24.651.582l.628 4.149c-1.436-1.135-3.33-2.36-5.455-3.043L16.495.618l2.036 3.354c-1.535-.322-3.581-.559-6.225-.497l-4.117.095 3.638 2.437a21.507 21.507 0 00-5.843 1.954L2.578 9.686l4.083.783c-1.655 1.075-3.559 2.585-4.654 4.388L.377 17.54l3.429-.83c-1 1.606-2.047 3.706-2.403 5.886l-.56 3.444 2.904-2.416c-.122.886-.21 1.863-.21 2.873 0 1.21.123 2.461.458 3.631l.93 3.255L6.54 30.1c.499 1.723 1.344 3.726 2.791 5.466l2.134 2.565.198-3.848c1.048 1.184 2.51 2.608 4.57 4.17l3.249 2.46-1.38-4.413c1.546.778 3.636 1.578 6.256 2.014l3.91.652-3.08-3.178c1.66.04 3.744-.12 6.055-.772l3.433-.97-3.517-1.595a19.406 19.406 0 005.251-3.326l2.68-2.394-3.778.123c1.178-1.27 2.478-3.003 3.376-5.167l1.407-3.392-3.395 1.832c.493-1.546.928-3.53 1.008-5.859l.134-3.923-2.564 3.197c-.125-1.904-.524-4.184-1.592-6.064l-1.549-2.73-.888 3.192a20.976 20.976 0 00-3.836-4.92zM12.598 20.45c0-4.145 3.372-7.517 7.516-7.517 4.145 0 7.517 3.372 7.517 7.517 0 4.145-3.372 7.517-7.517 7.517-4.144 0-7.516-3.372-7.516-7.517z"></path>
+          </svg>
+    </div>
+</body>
+</html>
