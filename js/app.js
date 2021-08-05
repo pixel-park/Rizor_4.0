@@ -110,25 +110,26 @@ window.addEventListener('mousemove', function(e){
             rotate: "random(-360,360)",
             repeat: 0,
             duration: 1,
-            onComplete: ()=>{gsap.to(e.target, {
-                x: 0,
-                scale: 1, 
-                rotate: 0,
-                y: 0,
-                repeat: 0,
-                duration: 0.5,
-                onComplete: ()=>{
-                    gsap.to(e.target,{
-                        opacity: 1, 
-                        repeat: 0,
-                        duration: "random(2,6)",
-                        delay: "random(.5,3)",
+            stagger:{
+                each:0.5,
+                onComplete:function(){                
+                  gsap.to(this.targets()[0], {
+                    scale: 1, 
+                    x: 0,
+                    y: 0,
+                    rotate: 0,
+                    duration: 0,
+                    onComplete:function(){               
+                        gsap.to(this.targets()[0], {    
+                        opacity: 1,
+                        duration: "random(1, 6)",
+                        delay: "random(0.5, 3)",
                         ease: "power1.in"
                         })
+                      }
+                    })
                 }
-                })
-                
-            }
+              }
         })   
     }  
     if(act){
