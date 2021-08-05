@@ -112,12 +112,22 @@ window.addEventListener('mousemove', function(e){
             duration: 1,
             onComplete: ()=>{gsap.to(e.target, {
                 x: 0,
-                opacity: 1, scale: 1, 
+                scale: 1, 
                 rotate: 0,
                 y: 0,
                 repeat: 0,
                 duration: 0.5,
+                onComplete: ()=>{
+                    gsap.to(e.target,{
+                        opacity: 1, 
+                        repeat: 0,
+                        duration: "random(2,6)",
+                        delay: "random(.5,3)",
+                        ease: "power1.in"
+                        })
+                }
                 })
+                
             }
         })   
     }  
